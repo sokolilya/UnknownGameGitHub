@@ -1,0 +1,24 @@
+PODS:
+  - LinearProgressView (2.0.1)
+  - RoundedCornerView (0.2.0)
+  - SwipeableTabBarController (2.1.1)
+
+DEPENDENCIES:
+  - LinearProgressView
+  - RoundedCornerView
+  - SwipeableTabBarController
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - LinearProgressView
+    - RoundedCornerView
+    - SwipeableTabBarController
+
+SPEC CHECKSUMS:
+  LinearProgressView: 353d4d45dc599b83cc4b43f14e6c0336aa6f3834
+  RoundedCornerView: c0dd93cbae7b44733f7cb1324aece2474d7043ba
+  SwipeableTabBarController: 8f7f04275f510c5babb630f7be1161b5f28567e0
+
+PODFILE CHECKSUM: 51737fb75adbff65da833ecaa97fab62672c54d4
+
+COCOAPODS: 1.7.5

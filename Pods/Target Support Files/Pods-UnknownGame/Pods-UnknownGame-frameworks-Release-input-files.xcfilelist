@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-UnknownGame/Pods-UnknownGame-frameworks.sh
+${BUILT_PRODUCTS_DIR}/LinearProgressView/LinearProgressView.framework
+${BUILT_PRODUCTS_DIR}/RoundedCornerView/RoundedCornerView.framework
+${BUILT_PRODUCTS_DIR}/SwipeableTabBarController/SwipeableTabBarController.framework

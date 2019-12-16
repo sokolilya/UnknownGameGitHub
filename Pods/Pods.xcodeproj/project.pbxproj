@@ -1,0 +1,990 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09E7273F453EF700611634D327A35599 /* RoundedCornerView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7647102869A9160A5172556447DC5095 /* RoundedCornerView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		12B5694DF8F6101FB0EE038C8604AA34 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		1C5CC357BE79D7FD7C936BBC0C26F987 /* LinearProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0442E9F2467226DA76FD5D5627E3085C /* LinearProgressView.swift */; };
+		314718876C281FAF353F545EC535F8F1 /* SwipeableTabBarController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DFA161BC136C5378C4008F7A21C2A1D /* SwipeableTabBarController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		32CCC5C914C09629148F0A07CA4A1D63 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		48EAB01169E1E2F21FBA206888319CD9 /* SwipeAnimationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881D5575225F178BBAA6CC93921CAF74 /* SwipeAnimationType.swift */; };
+		5757B43B1DD701C2E4F9C849CAE6124C /* LinearProgressView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 367A9E1F68B61AF3E4C4CE258FFD9C62 /* LinearProgressView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		599E64DC5C1413BD9B9A47B23BD1CDBA /* SwipeTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0198DE56DA4914C519F4A68FF61D589 /* SwipeTransitionAnimator.swift */; };
+		5F70B73D82CEAB75E72FF7C46A630202 /* UIKit+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D31438CCB140F43C5E549CDF6B62B9D /* UIKit+Extensions.swift */; };
+		7FA70071D8D84DE1919968A01EAA2CEF /* Pods-UnknownGame-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F31BB7A1C64FF93490D1DA6D464FEE /* Pods-UnknownGame-dummy.m */; };
+		8855A0B15EF99844D8E46609BA8B23C7 /* SwipeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E874179D6F826C8F224122E6ECE543D /* SwipeInteractor.swift */; };
+		8C5F3DE33A9D88C0FB50FC2AC8809A2C /* Pods-UnknownGame-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E5F1AAAAF78AE331D89EF7A0A3EA736 /* Pods-UnknownGame-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92A9CE60E713065DBB064C8B7426763D /* RoundedCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168C6A4775F17C3C3F32DD94EA722B2E /* RoundedCornerView.swift */; };
+		9450D62806DA4BE13ED72E8B31342236 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		9789B01750E99FB0756376671EF9FE1D /* SwipeableTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81CE96AB9338CF6B7B9E60E3EB8674E /* SwipeableTabBarController.swift */; };
+		9D3C702753B5A4DAEFE1AA22070226D1 /* LinearProgressView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F5F63260528F12C67767DC51A5A76F /* LinearProgressView-dummy.m */; };
+		AC7E1173D911EB56F29FDF5C8A1C3841 /* RoundedCornerView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E55034618402F29F05CEF2C2D0C9E5BA /* RoundedCornerView-dummy.m */; };
+		BAEBAD31DD47CC8BF99ED4766D7F2BC2 /* SwipeTransitioningProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE838746D5DEFCE0FBDE1CF76F9946A2 /* SwipeTransitioningProtocol.swift */; };
+		E2D7421251B914138AB1F06637E78A25 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		F6877147AD76F213C49FB9BB7AC02239 /* SwipeableTabBarController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7135D455279264F32F0AA6580CBCBA39 /* SwipeableTabBarController-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5C95BE7437606BE380A57861F85FBE84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8DF68454CEA9F73B4A868AE1FDAC026;
+			remoteInfo = RoundedCornerView;
+		};
+		A340B887BDC2502EEE7063B5E4375CF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54AB102BD56121F4FB8F9FF3053F8767;
+			remoteInfo = LinearProgressView;
+		};
+		CC2C0465D5511B202DC2078141B92A23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CD2985EC5826C32DE2E7CBE62FB81ED;
+			remoteInfo = SwipeableTabBarController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0442E9F2467226DA76FD5D5627E3085C /* LinearProgressView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LinearProgressView.swift; path = Source/LinearProgressView.swift; sourceTree = "<group>"; };
+		0A4B7161021729DF8F2BD9963F4D36AE /* Pods-UnknownGame-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UnknownGame-acknowledgements.plist"; sourceTree = "<group>"; };
+		168C6A4775F17C3C3F32DD94EA722B2E /* RoundedCornerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RoundedCornerView.swift; path = RoundedCornerView/Classes/RoundedCornerView.swift; sourceTree = "<group>"; };
+		2672AFB9713BC8D330980559D92F62CE /* SwipeableTabBarController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwipeableTabBarController.xcconfig; sourceTree = "<group>"; };
+		2E5F1AAAAF78AE331D89EF7A0A3EA736 /* Pods-UnknownGame-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-UnknownGame-umbrella.h"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3346A0D3E631B1069568052A9D925111 /* RoundedCornerView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RoundedCornerView-prefix.pch"; sourceTree = "<group>"; };
+		367A9E1F68B61AF3E4C4CE258FFD9C62 /* LinearProgressView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LinearProgressView-umbrella.h"; sourceTree = "<group>"; };
+		3810C71637672668196CB02BC12853C3 /* Pods-UnknownGame-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UnknownGame-Info.plist"; sourceTree = "<group>"; };
+		3921196B591C6D9F0C3CC18F8393DA55 /* Pods-UnknownGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UnknownGame.debug.xcconfig"; sourceTree = "<group>"; };
+		44BDE666786E299753905F12877D4067 /* LinearProgressView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LinearProgressView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48F31BB7A1C64FF93490D1DA6D464FEE /* Pods-UnknownGame-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UnknownGame-dummy.m"; sourceTree = "<group>"; };
+		4E3B655B7003F1FF27C560361C677BC1 /* LinearProgressView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LinearProgressView.xcconfig; sourceTree = "<group>"; };
+		5C08CAF068E6078732F59947AECCA3B6 /* RoundedCornerView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RoundedCornerView.xcconfig; sourceTree = "<group>"; };
+		5CAD561532860011C940ABF07527C705 /* SwipeableTabBarController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwipeableTabBarController.modulemap; sourceTree = "<group>"; };
+		5E874179D6F826C8F224122E6ECE543D /* SwipeInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeInteractor.swift; path = SwipeableTabBarController/Classes/SwipeInteractor.swift; sourceTree = "<group>"; };
+		611F6D22FBF8FB5DE7B9AC8EC7BCF523 /* LinearProgressView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LinearProgressView.modulemap; sourceTree = "<group>"; };
+		65E2B747A79A173B2609D8BA3802AE66 /* SwipeableTabBarController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwipeableTabBarController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D31438CCB140F43C5E549CDF6B62B9D /* UIKit+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIKit+Extensions.swift"; path = "SwipeableTabBarController/Classes/UIKit+Extensions.swift"; sourceTree = "<group>"; };
+		7135D455279264F32F0AA6580CBCBA39 /* SwipeableTabBarController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwipeableTabBarController-dummy.m"; sourceTree = "<group>"; };
+		7647102869A9160A5172556447DC5095 /* RoundedCornerView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RoundedCornerView-umbrella.h"; sourceTree = "<group>"; };
+		7AAEA0D756686AF64532CD02D4C86D6C /* Pods-UnknownGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UnknownGame.release.xcconfig"; sourceTree = "<group>"; };
+		7B7C88EB766162DB78E2DC7471794CB7 /* RoundedCornerView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RoundedCornerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D9FF5A4ED06C53F5E85D990BC9F1A09 /* SwipeableTabBarController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwipeableTabBarController-prefix.pch"; sourceTree = "<group>"; };
+		7DFA161BC136C5378C4008F7A21C2A1D /* SwipeableTabBarController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwipeableTabBarController-umbrella.h"; sourceTree = "<group>"; };
+		881D5575225F178BBAA6CC93921CAF74 /* SwipeAnimationType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeAnimationType.swift; path = SwipeableTabBarController/Classes/SwipeAnimationType.swift; sourceTree = "<group>"; };
+		882AA5E054CD792B3F7E9307CFAEDB4E /* SwipeableTabBarController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwipeableTabBarController-Info.plist"; sourceTree = "<group>"; };
+		8987A0570C7C24A4A481030BAFA0854B /* Pods-UnknownGame-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-UnknownGame-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A6BD8F0B68E2FF54607F5E507A857CB0 /* Pods-UnknownGame-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UnknownGame-frameworks.sh"; sourceTree = "<group>"; };
+		A81CE96AB9338CF6B7B9E60E3EB8674E /* SwipeableTabBarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeableTabBarController.swift; path = SwipeableTabBarController/Classes/SwipeableTabBarController.swift; sourceTree = "<group>"; };
+		B0F0B77488BBD660CAB6180686B402F8 /* LinearProgressView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LinearProgressView-prefix.pch"; sourceTree = "<group>"; };
+		C9F5F63260528F12C67767DC51A5A76F /* LinearProgressView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LinearProgressView-dummy.m"; sourceTree = "<group>"; };
+		CDAA7D6F186A572DA5A23E218E9D4DE1 /* RoundedCornerView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RoundedCornerView.modulemap; sourceTree = "<group>"; };
+		D02053EB9CEB04EA6CD7A5B528C7DE29 /* Pods_UnknownGame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UnknownGame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D84E4D32D7095F0AC96063575F66A9A9 /* LinearProgressView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LinearProgressView-Info.plist"; sourceTree = "<group>"; };
+		E0198DE56DA4914C519F4A68FF61D589 /* SwipeTransitionAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeTransitionAnimator.swift; path = SwipeableTabBarController/Classes/SwipeTransitionAnimator.swift; sourceTree = "<group>"; };
+		E55034618402F29F05CEF2C2D0C9E5BA /* RoundedCornerView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RoundedCornerView-dummy.m"; sourceTree = "<group>"; };
+		F6B54E7D3E91CA61F2B91C69763F5B07 /* RoundedCornerView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "RoundedCornerView-Info.plist"; sourceTree = "<group>"; };
+		FB88B12035D1647D0218A5186932AE20 /* Pods-UnknownGame.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-UnknownGame.modulemap"; sourceTree = "<group>"; };
+		FE838746D5DEFCE0FBDE1CF76F9946A2 /* SwipeTransitioningProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeTransitioningProtocol.swift; path = SwipeableTabBarController/Classes/SwipeTransitioningProtocol.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		09B81CDE76191C834662505FE81A34E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32CCC5C914C09629148F0A07CA4A1D63 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BE340D12F20FFB3C872FF88551D9247 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9450D62806DA4BE13ED72E8B31342236 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58E2145F343A5548D9BE7ECEA96ED38C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2D7421251B914138AB1F06637E78A25 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F134BB55418AA786E10856DF9F3ACDED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12B5694DF8F6101FB0EE038C8604AA34 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		046E112B2D172376DE3CA8356EF87A80 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44BDE666786E299753905F12877D4067 /* LinearProgressView.framework */,
+				D02053EB9CEB04EA6CD7A5B528C7DE29 /* Pods_UnknownGame.framework */,
+				7B7C88EB766162DB78E2DC7471794CB7 /* RoundedCornerView.framework */,
+				65E2B747A79A173B2609D8BA3802AE66 /* SwipeableTabBarController.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		23F4D79351109A98DA252BF716676C23 /* LinearProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				0442E9F2467226DA76FD5D5627E3085C /* LinearProgressView.swift */,
+				4BEA508802D748C0A6F4616FF7FA9240 /* Support Files */,
+			);
+			path = LinearProgressView;
+			sourceTree = "<group>";
+		};
+		2551D83F2C94BBFB0B09133C7BF5ECD2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5CAD561532860011C940ABF07527C705 /* SwipeableTabBarController.modulemap */,
+				2672AFB9713BC8D330980559D92F62CE /* SwipeableTabBarController.xcconfig */,
+				7135D455279264F32F0AA6580CBCBA39 /* SwipeableTabBarController-dummy.m */,
+				882AA5E054CD792B3F7E9307CFAEDB4E /* SwipeableTabBarController-Info.plist */,
+				7D9FF5A4ED06C53F5E85D990BC9F1A09 /* SwipeableTabBarController-prefix.pch */,
+				7DFA161BC136C5378C4008F7A21C2A1D /* SwipeableTabBarController-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwipeableTabBarController";
+			sourceTree = "<group>";
+		};
+		4BEA508802D748C0A6F4616FF7FA9240 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				611F6D22FBF8FB5DE7B9AC8EC7BCF523 /* LinearProgressView.modulemap */,
+				4E3B655B7003F1FF27C560361C677BC1 /* LinearProgressView.xcconfig */,
+				C9F5F63260528F12C67767DC51A5A76F /* LinearProgressView-dummy.m */,
+				D84E4D32D7095F0AC96063575F66A9A9 /* LinearProgressView-Info.plist */,
+				B0F0B77488BBD660CAB6180686B402F8 /* LinearProgressView-prefix.pch */,
+				367A9E1F68B61AF3E4C4CE258FFD9C62 /* LinearProgressView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/LinearProgressView";
+			sourceTree = "<group>";
+		};
+		81B6AFD09BF1F523A4E7D28529047818 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CDAA7D6F186A572DA5A23E218E9D4DE1 /* RoundedCornerView.modulemap */,
+				5C08CAF068E6078732F59947AECCA3B6 /* RoundedCornerView.xcconfig */,
+				E55034618402F29F05CEF2C2D0C9E5BA /* RoundedCornerView-dummy.m */,
+				F6B54E7D3E91CA61F2B91C69763F5B07 /* RoundedCornerView-Info.plist */,
+				3346A0D3E631B1069568052A9D925111 /* RoundedCornerView-prefix.pch */,
+				7647102869A9160A5172556447DC5095 /* RoundedCornerView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/RoundedCornerView";
+			sourceTree = "<group>";
+		};
+		A46851EE80ABF25ED0C12ABD825417BC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				23F4D79351109A98DA252BF716676C23 /* LinearProgressView */,
+				BFBFE4C8F7142004C7DD1D9982479ECE /* RoundedCornerView */,
+				F52A208191CC0C4D6DD5161B53D09739 /* SwipeableTabBarController */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BFBFE4C8F7142004C7DD1D9982479ECE /* RoundedCornerView */ = {
+			isa = PBXGroup;
+			children = (
+				168C6A4775F17C3C3F32DD94EA722B2E /* RoundedCornerView.swift */,
+				81B6AFD09BF1F523A4E7D28529047818 /* Support Files */,
+			);
+			path = RoundedCornerView;
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				A46851EE80ABF25ED0C12ABD825417BC /* Pods */,
+				046E112B2D172376DE3CA8356EF87A80 /* Products */,
+				DC78D7F52691B8B823F2EE5CAC1C318A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC78D7F52691B8B823F2EE5CAC1C318A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F3C9BB14DEC2EAFCA0C933FCDD760C8E /* Pods-UnknownGame */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F3C9BB14DEC2EAFCA0C933FCDD760C8E /* Pods-UnknownGame */ = {
+			isa = PBXGroup;
+			children = (
+				FB88B12035D1647D0218A5186932AE20 /* Pods-UnknownGame.modulemap */,
+				8987A0570C7C24A4A481030BAFA0854B /* Pods-UnknownGame-acknowledgements.markdown */,
+				0A4B7161021729DF8F2BD9963F4D36AE /* Pods-UnknownGame-acknowledgements.plist */,
+				48F31BB7A1C64FF93490D1DA6D464FEE /* Pods-UnknownGame-dummy.m */,
+				A6BD8F0B68E2FF54607F5E507A857CB0 /* Pods-UnknownGame-frameworks.sh */,
+				3810C71637672668196CB02BC12853C3 /* Pods-UnknownGame-Info.plist */,
+				2E5F1AAAAF78AE331D89EF7A0A3EA736 /* Pods-UnknownGame-umbrella.h */,
+				3921196B591C6D9F0C3CC18F8393DA55 /* Pods-UnknownGame.debug.xcconfig */,
+				7AAEA0D756686AF64532CD02D4C86D6C /* Pods-UnknownGame.release.xcconfig */,
+			);
+			name = "Pods-UnknownGame";
+			path = "Target Support Files/Pods-UnknownGame";
+			sourceTree = "<group>";
+		};
+		F52A208191CC0C4D6DD5161B53D09739 /* SwipeableTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				A81CE96AB9338CF6B7B9E60E3EB8674E /* SwipeableTabBarController.swift */,
+				881D5575225F178BBAA6CC93921CAF74 /* SwipeAnimationType.swift */,
+				5E874179D6F826C8F224122E6ECE543D /* SwipeInteractor.swift */,
+				E0198DE56DA4914C519F4A68FF61D589 /* SwipeTransitionAnimator.swift */,
+				FE838746D5DEFCE0FBDE1CF76F9946A2 /* SwipeTransitioningProtocol.swift */,
+				6D31438CCB140F43C5E549CDF6B62B9D /* UIKit+Extensions.swift */,
+				2551D83F2C94BBFB0B09133C7BF5ECD2 /* Support Files */,
+			);
+			path = SwipeableTabBarController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3FA608D6105C6B68E2323DC469F8FB78 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C5F3DE33A9D88C0FB50FC2AC8809A2C /* Pods-UnknownGame-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BC8A421E1A512185A69F740FB6709E3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09E7273F453EF700611634D327A35599 /* RoundedCornerView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C59F06087E33542B3DD0D7DCEF588E7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				314718876C281FAF353F545EC535F8F1 /* SwipeableTabBarController-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD65CE965DB6073C4389263D57A4B4A8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5757B43B1DD701C2E4F9C849CAE6124C /* LinearProgressView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		30B2F6D8C8C1670AE0E77D588D219C0F /* Pods-UnknownGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE513A1CF19F7C3B76A8F4EA9EBA8838 /* Build configuration list for PBXNativeTarget "Pods-UnknownGame" */;
+			buildPhases = (
+				3FA608D6105C6B68E2323DC469F8FB78 /* Headers */,
+				14BFCD806A21D0E4B20009C651B508A8 /* Sources */,
+				4BE340D12F20FFB3C872FF88551D9247 /* Frameworks */,
+				5DA1F562BD5653ACDA0FF0B5B40A091F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3BEB37F56E16B9D3471E8A7783289F91 /* PBXTargetDependency */,
+				DC81804AFD93E938FC1F66BE2BBD216B /* PBXTargetDependency */,
+				C9B2B3AEA8E0F7DCF7E9515099A7F37F /* PBXTargetDependency */,
+			);
+			name = "Pods-UnknownGame";
+			productName = "Pods-UnknownGame";
+			productReference = D02053EB9CEB04EA6CD7A5B528C7DE29 /* Pods_UnknownGame.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3CD2985EC5826C32DE2E7CBE62FB81ED /* SwipeableTabBarController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D390677976E50C06A225290B486C2F0 /* Build configuration list for PBXNativeTarget "SwipeableTabBarController" */;
+			buildPhases = (
+				9C59F06087E33542B3DD0D7DCEF588E7 /* Headers */,
+				529A58483395B7C0A4D60B9FBCCAB4EC /* Sources */,
+				09B81CDE76191C834662505FE81A34E2 /* Frameworks */,
+				E63E0922028368AA411D27B22BF93A72 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwipeableTabBarController;
+			productName = SwipeableTabBarController;
+			productReference = 65E2B747A79A173B2609D8BA3802AE66 /* SwipeableTabBarController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		54AB102BD56121F4FB8F9FF3053F8767 /* LinearProgressView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 468713B033E03CCC7E0340CC0ACD60C8 /* Build configuration list for PBXNativeTarget "LinearProgressView" */;
+			buildPhases = (
+				CD65CE965DB6073C4389263D57A4B4A8 /* Headers */,
+				A6048004CB5DD3606FD74F00B365F9A6 /* Sources */,
+				F134BB55418AA786E10856DF9F3ACDED /* Frameworks */,
+				A59539DBB41D1FEBD50276CBC3F0F628 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LinearProgressView;
+			productName = LinearProgressView;
+			productReference = 44BDE666786E299753905F12877D4067 /* LinearProgressView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A8DF68454CEA9F73B4A868AE1FDAC026 /* RoundedCornerView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 263210C6988BBB7EAEA6F2FAB0C2EF92 /* Build configuration list for PBXNativeTarget "RoundedCornerView" */;
+			buildPhases = (
+				9BC8A421E1A512185A69F740FB6709E3 /* Headers */,
+				1F0FF67556C2823245128508CBD3A0B1 /* Sources */,
+				58E2145F343A5548D9BE7ECEA96ED38C /* Frameworks */,
+				40507E58BAB6231FABAB9D9BCDF7E8D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RoundedCornerView;
+			productName = RoundedCornerView;
+			productReference = 7B7C88EB766162DB78E2DC7471794CB7 /* RoundedCornerView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					3CD2985EC5826C32DE2E7CBE62FB81ED = {
+						LastSwiftMigration = 1030;
+					};
+				};
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 046E112B2D172376DE3CA8356EF87A80 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				54AB102BD56121F4FB8F9FF3053F8767 /* LinearProgressView */,
+				30B2F6D8C8C1670AE0E77D588D219C0F /* Pods-UnknownGame */,
+				A8DF68454CEA9F73B4A868AE1FDAC026 /* RoundedCornerView */,
+				3CD2985EC5826C32DE2E7CBE62FB81ED /* SwipeableTabBarController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		40507E58BAB6231FABAB9D9BCDF7E8D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DA1F562BD5653ACDA0FF0B5B40A091F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A59539DBB41D1FEBD50276CBC3F0F628 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E63E0922028368AA411D27B22BF93A72 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		14BFCD806A21D0E4B20009C651B508A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FA70071D8D84DE1919968A01EAA2CEF /* Pods-UnknownGame-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F0FF67556C2823245128508CBD3A0B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC7E1173D911EB56F29FDF5C8A1C3841 /* RoundedCornerView-dummy.m in Sources */,
+				92A9CE60E713065DBB064C8B7426763D /* RoundedCornerView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		529A58483395B7C0A4D60B9FBCCAB4EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6877147AD76F213C49FB9BB7AC02239 /* SwipeableTabBarController-dummy.m in Sources */,
+				9789B01750E99FB0756376671EF9FE1D /* SwipeableTabBarController.swift in Sources */,
+				48EAB01169E1E2F21FBA206888319CD9 /* SwipeAnimationType.swift in Sources */,
+				8855A0B15EF99844D8E46609BA8B23C7 /* SwipeInteractor.swift in Sources */,
+				599E64DC5C1413BD9B9A47B23BD1CDBA /* SwipeTransitionAnimator.swift in Sources */,
+				BAEBAD31DD47CC8BF99ED4766D7F2BC2 /* SwipeTransitioningProtocol.swift in Sources */,
+				5F70B73D82CEAB75E72FF7C46A630202 /* UIKit+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6048004CB5DD3606FD74F00B365F9A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D3C702753B5A4DAEFE1AA22070226D1 /* LinearProgressView-dummy.m in Sources */,
+				1C5CC357BE79D7FD7C936BBC0C26F987 /* LinearProgressView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3BEB37F56E16B9D3471E8A7783289F91 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LinearProgressView;
+			target = 54AB102BD56121F4FB8F9FF3053F8767 /* LinearProgressView */;
+			targetProxy = A340B887BDC2502EEE7063B5E4375CF2 /* PBXContainerItemProxy */;
+		};
+		C9B2B3AEA8E0F7DCF7E9515099A7F37F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwipeableTabBarController;
+			target = 3CD2985EC5826C32DE2E7CBE62FB81ED /* SwipeableTabBarController */;
+			targetProxy = CC2C0465D5511B202DC2078141B92A23 /* PBXContainerItemProxy */;
+		};
+		DC81804AFD93E938FC1F66BE2BBD216B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RoundedCornerView;
+			target = A8DF68454CEA9F73B4A868AE1FDAC026 /* RoundedCornerView */;
+			targetProxy = 5C95BE7437606BE380A57861F85FBE84 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		082CDE8DBD608CC64A140C29F15F550A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C08CAF068E6078732F59947AECCA3B6 /* RoundedCornerView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RoundedCornerView/RoundedCornerView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RoundedCornerView/RoundedCornerView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/RoundedCornerView/RoundedCornerView.modulemap";
+				PRODUCT_MODULE_NAME = RoundedCornerView;
+				PRODUCT_NAME = RoundedCornerView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		27431EC3D7EEF32091F5B91D59488097 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C08CAF068E6078732F59947AECCA3B6 /* RoundedCornerView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RoundedCornerView/RoundedCornerView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RoundedCornerView/RoundedCornerView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/RoundedCornerView/RoundedCornerView.modulemap";
+				PRODUCT_MODULE_NAME = RoundedCornerView;
+				PRODUCT_NAME = RoundedCornerView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3D93CA1C6C56EDF6AF2002F43AE03241 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E3B655B7003F1FF27C560361C677BC1 /* LinearProgressView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LinearProgressView/LinearProgressView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LinearProgressView/LinearProgressView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/LinearProgressView/LinearProgressView.modulemap";
+				PRODUCT_MODULE_NAME = LinearProgressView;
+				PRODUCT_NAME = LinearProgressView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4D9189394498D78AC341274167B98D53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AAEA0D756686AF64532CD02D4C86D6C /* Pods-UnknownGame.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-UnknownGame/Pods-UnknownGame-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-UnknownGame/Pods-UnknownGame.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		916E0404255105F480DC4950B7625F7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		96D6B7D446A83CDD7B9D37FF04A4230B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2672AFB9713BC8D330980559D92F62CE /* SwipeableTabBarController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwipeableTabBarController/SwipeableTabBarController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwipeableTabBarController/SwipeableTabBarController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwipeableTabBarController/SwipeableTabBarController.modulemap";
+				PRODUCT_MODULE_NAME = SwipeableTabBarController;
+				PRODUCT_NAME = SwipeableTabBarController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9AF13D9ED5108631B68FECCAB95B21BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E3B655B7003F1FF27C560361C677BC1 /* LinearProgressView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LinearProgressView/LinearProgressView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LinearProgressView/LinearProgressView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/LinearProgressView/LinearProgressView.modulemap";
+				PRODUCT_MODULE_NAME = LinearProgressView;
+				PRODUCT_NAME = LinearProgressView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C3E6DCB948E31E596956176B2B2195AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3921196B591C6D9F0C3CC18F8393DA55 /* Pods-UnknownGame.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-UnknownGame/Pods-UnknownGame-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-UnknownGame/Pods-UnknownGame.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DB0105A2B135ED80686657AFE9F8C1C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2672AFB9713BC8D330980559D92F62CE /* SwipeableTabBarController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwipeableTabBarController/SwipeableTabBarController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwipeableTabBarController/SwipeableTabBarController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwipeableTabBarController/SwipeableTabBarController.modulemap";
+				PRODUCT_MODULE_NAME = SwipeableTabBarController;
+				PRODUCT_NAME = SwipeableTabBarController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		263210C6988BBB7EAEA6F2FAB0C2EF92 /* Build configuration list for PBXNativeTarget "RoundedCornerView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				082CDE8DBD608CC64A140C29F15F550A /* Debug */,
+				27431EC3D7EEF32091F5B91D59488097 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		468713B033E03CCC7E0340CC0ACD60C8 /* Build configuration list for PBXNativeTarget "LinearProgressView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D93CA1C6C56EDF6AF2002F43AE03241 /* Debug */,
+				9AF13D9ED5108631B68FECCAB95B21BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				916E0404255105F480DC4950B7625F7A /* Debug */,
+				8F17DC3A99F99FBAD606CE6963886315 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D390677976E50C06A225290B486C2F0 /* Build configuration list for PBXNativeTarget "SwipeableTabBarController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96D6B7D446A83CDD7B9D37FF04A4230B /* Debug */,
+				DB0105A2B135ED80686657AFE9F8C1C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE513A1CF19F7C3B76A8F4EA9EBA8838 /* Build configuration list for PBXNativeTarget "Pods-UnknownGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3E6DCB948E31E596956176B2B2195AE /* Debug */,
+				4D9189394498D78AC341274167B98D53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
