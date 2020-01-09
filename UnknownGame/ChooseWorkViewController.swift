@@ -15,8 +15,11 @@ class ChooseWorkViewController: UIViewController {
         super.viewDidLoad()
         
         NotificationCenter.default.addObserver(self, selector: #selector(dismissVC), name: NSNotification.Name(rawValue: "dismissChooseWork"), object: nil)
+        
+        setupUI()
     }
         
+    @IBOutlet weak var backgroundImage: UIImageView!
     @IBAction func backButtonAction(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
@@ -36,3 +39,20 @@ class ChooseWorkViewController: UIViewController {
     }
     
 }
+
+extension ChooseWorkViewController {
+    
+    func setupUI() {
+        let modelName = UIDevice.modelName
+        print(modelName)
+        
+        switch modelName {
+        case "iPhone X", "iPhone XS", "iPhone XS Max", "iPhone XR", "iPhone 11", "iPhone 11 Pro", "iPhone 11 Pro Max":
+            backgroundImage.image = UIImage(named: "background_2_11")
+        default:
+            backgroundImage.image = UIImage(named: "background_2_8")
+        }
+    }
+    
+}
+

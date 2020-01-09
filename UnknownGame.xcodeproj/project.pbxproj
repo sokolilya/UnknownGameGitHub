@@ -7,14 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5809298D23AB48490034E850 /* UIDevice+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5809298C23AB48490034E850 /* UIDevice+Extensions.swift */; };
 		5811E6DE2333A80100869877 /* MediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5811E6DD2333A80100869877 /* MediaViewController.swift */; };
+		581C4D7B23C713F1004965A6 /* UIStackView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581C4D7A23C713F1004965A6 /* UIStackView+Extensions.swift */; };
 		581C51B723A2AA7F003FA609 /* PromotionFollowersViewController copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581C51B623A2AA7F003FA609 /* PromotionFollowersViewController copy.swift */; };
 		581C51B923A2B297003FA609 /* PromotionPopularityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581C51B823A2B297003FA609 /* PromotionPopularityViewController.swift */; };
-		581C51C023A4056D003FA609 /* Extensions+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581C51BF23A4056D003FA609 /* Extensions+UIView.swift */; };
+		581C51C023A4056D003FA609 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581C51BF23A4056D003FA609 /* UIView+Extensions.swift */; };
 		581F8ACC232949480061D4E1 /* FreelanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581F8ACB232949480061D4E1 /* FreelanceViewController.swift */; };
 		581F8ACE232A55710061D4E1 /* FreelanceJobListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581F8ACD232A55710061D4E1 /* FreelanceJobListViewController.swift */; };
 		581F8AD0232B867F0061D4E1 /* ChooseWorkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581F8ACF232B867F0061D4E1 /* ChooseWorkViewController.swift */; };
 		581F8AD2232B8AE20061D4E1 /* ChooseWorkChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581F8AD1232B8AE20061D4E1 /* ChooseWorkChildViewController.swift */; };
+		584BE9FD23B251E30079CBD7 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584BE9FC23B251E30079CBD7 /* TabBarView.swift */; };
+		584BE9FF23B2520A0079CBD7 /* TabBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 584BE9FE23B2520A0079CBD7 /* TabBarView.xib */; };
+		584BEA0223B355750079CBD7 /* BioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584BEA0123B355750079CBD7 /* BioView.swift */; };
+		584BEA0523B356870079CBD7 /* BioView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 584BEA0423B356870079CBD7 /* BioView.xib */; };
+		584BEA0723B35C120079CBD7 /* ProfileChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584BEA0623B35C120079CBD7 /* ProfileChildViewController.swift */; };
+		584BEA0A23B454580079CBD7 /* MediaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584BEA0923B454580079CBD7 /* MediaModel.swift */; };
+		584BEA0C23B454800079CBD7 /* PromotionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584BEA0B23B454800079CBD7 /* PromotionModel.swift */; };
+		584BEA0E23B4562F0079CBD7 /* JobModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584BEA0D23B4562F0079CBD7 /* JobModel.swift */; };
+		584BEA1023B459B40079CBD7 /* ProfileBioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584BEA0F23B459B40079CBD7 /* ProfileBioModel.swift */; };
 		588B0220233DF7C200CCB9B7 /* StreamTVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588B021F233DF7C200CCB9B7 /* StreamTVViewController.swift */; };
 		588B0222233DF7D600CCB9B7 /* VideoPlatformViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588B0221233DF7D600CCB9B7 /* VideoPlatformViewController.swift */; };
 		588B0224233E024200CCB9B7 /* StreamTVChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588B0223233E024200CCB9B7 /* StreamTVChildViewController.swift */; };
@@ -25,8 +36,20 @@
 		588CC5DC23215D3F00239D2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 588CC5DB23215D3F00239D2D /* Assets.xcassets */; };
 		588CC5DF23215D3F00239D2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 588CC5DD23215D3F00239D2D /* LaunchScreen.storyboard */; };
 		58B41576237AE18800B33271 /* PromotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B41575237AE18800B33271 /* PromotionViewController.swift */; };
+		58C9508323B6384600FEBB56 /* ChangeNamePopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C9508223B6384500FEBB56 /* ChangeNamePopupViewController.swift */; };
+		58C9508523B63E4500FEBB56 /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C9508423B63E4500FEBB56 /* UITextField+Extensions.swift */; };
+		58C9508823B64B6000FEBB56 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C9508723B64B6000FEBB56 /* CardView.swift */; };
+		58C9508A23B64B6D00FEBB56 /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58C9508923B64B6D00FEBB56 /* CardView.xib */; };
+		58C9508C23B64F7100FEBB56 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C9508B23B64F7100FEBB56 /* ProfileModel.swift */; };
+		58C9508F23B71E6D00FEBB56 /* ImagePickerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C9508E23B71E6D00FEBB56 /* ImagePickerViewCell.swift */; };
+		58C9509323B71E9200FEBB56 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C9509223B71E9200FEBB56 /* CardModel.swift */; };
+		58C9509523B72A5500FEBB56 /* ImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C9509423B72A5500FEBB56 /* ImagePickerViewController.swift */; };
+		58C9509D23B8D39100FEBB56 /* ShopListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C9509C23B8D39100FEBB56 /* ShopListCollectionViewCell.swift */; };
+		58C9509F23B8D3CF00FEBB56 /* ShopListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C9509E23B8D3CF00FEBB56 /* ShopListViewController.swift */; };
+		58C950A123B8E5F700FEBB56 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C950A023B8E5F700FEBB56 /* ProductModel.swift */; };
+		58C950A323BB587300FEBB56 /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C950A223BB587300FEBB56 /* UIButton+Extensions.swift */; };
 		58FEF0A52322445F004669BF /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FEF0A42322445F004669BF /* TabBarController.swift */; };
-		58FEF0A7232248A9004669BF /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FEF0A6232248A9004669BF /* PlayerViewController.swift */; };
+		58FEF0A7232248A9004669BF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FEF0A6232248A9004669BF /* ProfileViewController.swift */; };
 		58FEF0A9232248D3004669BF /* WorkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FEF0A8232248D3004669BF /* WorkViewController.swift */; };
 		58FEF0AB232248FA004669BF /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FEF0AA232248FA004669BF /* ShopViewController.swift */; };
 		58FEF0AD2322496C004669BF /* SkillsTreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FEF0AC2322496C004669BF /* SkillsTreeViewController.swift */; };
@@ -37,14 +60,25 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5809298C23AB48490034E850 /* UIDevice+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extensions.swift"; sourceTree = "<group>"; };
 		5811E6DD2333A80100869877 /* MediaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaViewController.swift; sourceTree = "<group>"; };
+		581C4D7A23C713F1004965A6 /* UIStackView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extensions.swift"; sourceTree = "<group>"; };
 		581C51B623A2AA7F003FA609 /* PromotionFollowersViewController copy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PromotionFollowersViewController copy.swift"; sourceTree = "<group>"; };
 		581C51B823A2B297003FA609 /* PromotionPopularityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionPopularityViewController.swift; sourceTree = "<group>"; };
-		581C51BF23A4056D003FA609 /* Extensions+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extensions+UIView.swift"; sourceTree = "<group>"; };
+		581C51BF23A4056D003FA609 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		581F8ACB232949480061D4E1 /* FreelanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreelanceViewController.swift; sourceTree = "<group>"; };
 		581F8ACD232A55710061D4E1 /* FreelanceJobListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreelanceJobListViewController.swift; sourceTree = "<group>"; };
 		581F8ACF232B867F0061D4E1 /* ChooseWorkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseWorkViewController.swift; sourceTree = "<group>"; };
 		581F8AD1232B8AE20061D4E1 /* ChooseWorkChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseWorkChildViewController.swift; sourceTree = "<group>"; };
+		584BE9FC23B251E30079CBD7 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		584BE9FE23B2520A0079CBD7 /* TabBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabBarView.xib; sourceTree = "<group>"; };
+		584BEA0123B355750079CBD7 /* BioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioView.swift; sourceTree = "<group>"; };
+		584BEA0423B356870079CBD7 /* BioView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BioView.xib; sourceTree = "<group>"; };
+		584BEA0623B35C120079CBD7 /* ProfileChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileChildViewController.swift; sourceTree = "<group>"; };
+		584BEA0923B454580079CBD7 /* MediaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaModel.swift; sourceTree = "<group>"; };
+		584BEA0B23B454800079CBD7 /* PromotionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionModel.swift; sourceTree = "<group>"; };
+		584BEA0D23B4562F0079CBD7 /* JobModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobModel.swift; sourceTree = "<group>"; };
+		584BEA0F23B459B40079CBD7 /* ProfileBioModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileBioModel.swift; sourceTree = "<group>"; };
 		588B021F233DF7C200CCB9B7 /* StreamTVViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamTVViewController.swift; sourceTree = "<group>"; };
 		588B0221233DF7D600CCB9B7 /* VideoPlatformViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlatformViewController.swift; sourceTree = "<group>"; };
 		588B0223233E024200CCB9B7 /* StreamTVChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamTVChildViewController.swift; sourceTree = "<group>"; };
@@ -57,8 +91,20 @@
 		588CC5DE23215D3F00239D2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		588CC5E023215D3F00239D2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58B41575237AE18800B33271 /* PromotionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionViewController.swift; sourceTree = "<group>"; };
+		58C9508223B6384500FEBB56 /* ChangeNamePopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeNamePopupViewController.swift; sourceTree = "<group>"; };
+		58C9508423B63E4500FEBB56 /* UITextField+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
+		58C9508723B64B6000FEBB56 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		58C9508923B64B6D00FEBB56 /* CardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
+		58C9508B23B64F7100FEBB56 /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
+		58C9508E23B71E6D00FEBB56 /* ImagePickerViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerViewCell.swift; sourceTree = "<group>"; };
+		58C9509223B71E9200FEBB56 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		58C9509423B72A5500FEBB56 /* ImagePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerViewController.swift; sourceTree = "<group>"; };
+		58C9509C23B8D39100FEBB56 /* ShopListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopListCollectionViewCell.swift; sourceTree = "<group>"; };
+		58C9509E23B8D3CF00FEBB56 /* ShopListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopListViewController.swift; sourceTree = "<group>"; };
+		58C950A023B8E5F700FEBB56 /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
+		58C950A223BB587300FEBB56 /* UIButton+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
 		58FEF0A42322445F004669BF /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
-		58FEF0A6232248A9004669BF /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		58FEF0A6232248A9004669BF /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		58FEF0A8232248D3004669BF /* WorkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkViewController.swift; sourceTree = "<group>"; };
 		58FEF0AA232248FA004669BF /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
 		58FEF0AC2322496C004669BF /* SkillsTreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsTreeViewController.swift; sourceTree = "<group>"; };
@@ -93,17 +139,14 @@
 			name = Media;
 			sourceTree = "<group>";
 		};
-		581C51BB23A404A9003FA609 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Views;
-			sourceTree = "<group>";
-		};
 		581C51BE23A4055E003FA609 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				581C51BF23A4056D003FA609 /* Extensions+UIView.swift */,
+				581C51BF23A4056D003FA609 /* UIView+Extensions.swift */,
+				5809298C23AB48490034E850 /* UIDevice+Extensions.swift */,
+				58C9508423B63E4500FEBB56 /* UITextField+Extensions.swift */,
+				58C950A223BB587300FEBB56 /* UIButton+Extensions.swift */,
+				581C4D7A23C713F1004965A6 /* UIStackView+Extensions.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -125,6 +168,59 @@
 				581F8ACD232A55710061D4E1 /* FreelanceJobListViewController.swift */,
 			);
 			name = Freelance;
+			sourceTree = "<group>";
+		};
+		584BE9FA23B08FA20079CBD7 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				58FEF0A6232248A9004669BF /* ProfileViewController.swift */,
+				584BEA0623B35C120079CBD7 /* ProfileChildViewController.swift */,
+				58C9509A23B8506C00FEBB56 /* ChangeNamePopup */,
+				58C9508D23B71E5400FEBB56 /* ImagePicker */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		584BE9FB23B251B90079CBD7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				58C9508623B64B4400FEBB56 /* CardView */,
+				584BEA0323B356640079CBD7 /* BioView */,
+				584BEA0023B355230079CBD7 /* TabBarView */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		584BEA0023B355230079CBD7 /* TabBarView */ = {
+			isa = PBXGroup;
+			children = (
+				584BE9FC23B251E30079CBD7 /* TabBarView.swift */,
+				584BE9FE23B2520A0079CBD7 /* TabBarView.xib */,
+			);
+			name = TabBarView;
+			sourceTree = "<group>";
+		};
+		584BEA0323B356640079CBD7 /* BioView */ = {
+			isa = PBXGroup;
+			children = (
+				584BEA0123B355750079CBD7 /* BioView.swift */,
+				584BEA0423B356870079CBD7 /* BioView.xib */,
+			);
+			name = BioView;
+			sourceTree = "<group>";
+		};
+		584BEA0823B454380079CBD7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				584BEA0923B454580079CBD7 /* MediaModel.swift */,
+				584BEA0B23B454800079CBD7 /* PromotionModel.swift */,
+				584BEA0D23B4562F0079CBD7 /* JobModel.swift */,
+				584BEA0F23B459B40079CBD7 /* ProfileBioModel.swift */,
+				58C9508B23B64F7100FEBB56 /* ProfileModel.swift */,
+				58C950A023B8E5F700FEBB56 /* ProductModel.swift */,
+				58C9509223B71E9200FEBB56 /* CardModel.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		588B0227233E027B00CCB9B7 /* StreamTV */ = {
@@ -166,8 +262,9 @@
 		588CC5D023215D3E00239D2D /* UnknownGame */ = {
 			isa = PBXGroup;
 			children = (
+				584BEA0823B454380079CBD7 /* Models */,
+				584BE9FB23B251B90079CBD7 /* Views */,
 				58FEF09F23224168004669BF /* ViewControllers */,
-				581C51BB23A404A9003FA609 /* Views */,
 				58FEF0A223224195004669BF /* UI */,
 				58FEF0A323224200004669BF /* Templates */,
 				581C51BE23A4055E003FA609 /* Extensions */,
@@ -188,13 +285,49 @@
 			name = Promotion;
 			sourceTree = "<group>";
 		};
+		58C9508623B64B4400FEBB56 /* CardView */ = {
+			isa = PBXGroup;
+			children = (
+				58C9508723B64B6000FEBB56 /* CardView.swift */,
+				58C9508923B64B6D00FEBB56 /* CardView.xib */,
+			);
+			name = CardView;
+			sourceTree = "<group>";
+		};
+		58C9508D23B71E5400FEBB56 /* ImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				58C9509423B72A5500FEBB56 /* ImagePickerViewController.swift */,
+				58C9508E23B71E6D00FEBB56 /* ImagePickerViewCell.swift */,
+			);
+			name = ImagePicker;
+			sourceTree = "<group>";
+		};
+		58C9509A23B8506C00FEBB56 /* ChangeNamePopup */ = {
+			isa = PBXGroup;
+			children = (
+				58C9508223B6384500FEBB56 /* ChangeNamePopupViewController.swift */,
+			);
+			name = ChangeNamePopup;
+			sourceTree = "<group>";
+		};
+		58C9509B23B86FE100FEBB56 /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				58FEF0AA232248FA004669BF /* ShopViewController.swift */,
+				58C9509E23B8D3CF00FEBB56 /* ShopListViewController.swift */,
+				58C9509C23B8D39100FEBB56 /* ShopListCollectionViewCell.swift */,
+			);
+			name = Shop;
+			sourceTree = "<group>";
+		};
 		58FEF09F23224168004669BF /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				58FEF0A42322445F004669BF /* TabBarController.swift */,
-				58FEF0B72326A7A2004669BF /* WorkViewControllers */,
-				58FEF0A6232248A9004669BF /* PlayerViewController.swift */,
-				58FEF0AA232248FA004669BF /* ShopViewController.swift */,
+				58FEF0B72326A7A2004669BF /* Work */,
+				584BE9FA23B08FA20079CBD7 /* Profile */,
+				58C9509B23B86FE100FEBB56 /* Shop */,
 				58FEF0AC2322496C004669BF /* SkillsTreeViewController.swift */,
 				58FEF0AE23224984004669BF /* AchievmentsViewController.swift */,
 			);
@@ -219,7 +352,7 @@
 			name = Templates;
 			sourceTree = "<group>";
 		};
-		58FEF0B72326A7A2004669BF /* WorkViewControllers */ = {
+		58FEF0B72326A7A2004669BF /* Work */ = {
 			isa = PBXGroup;
 			children = (
 				58FEF0A8232248D3004669BF /* WorkViewController.swift */,
@@ -227,7 +360,7 @@
 				581F8AD4232E38660061D4E1 /* Freelance */,
 				5811E6DC2333A7E000869877 /* Media */,
 			);
-			name = WorkViewControllers;
+			name = Work;
 			sourceTree = "<group>";
 		};
 		A7241E08D929AC3F05D28F7F /* Pods */ = {
@@ -309,6 +442,9 @@
 			files = (
 				588CC5DF23215D3F00239D2D /* LaunchScreen.storyboard in Resources */,
 				588CC5DC23215D3F00239D2D /* Assets.xcassets in Resources */,
+				58C9508A23B64B6D00FEBB56 /* CardView.xib in Resources */,
+				584BEA0523B356870079CBD7 /* BioView.xib in Resources */,
+				584BE9FF23B2520A0079CBD7 /* TabBarView.xib in Resources */,
 				588CC5D723215D3E00239D2D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,28 +498,48 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58C9508523B63E4500FEBB56 /* UITextField+Extensions.swift in Sources */,
+				58C950A323BB587300FEBB56 /* UIButton+Extensions.swift in Sources */,
 				58FEF0AF23224984004669BF /* AchievmentsViewController.swift in Sources */,
+				58C9508323B6384600FEBB56 /* ChangeNamePopupViewController.swift in Sources */,
 				5811E6DE2333A80100869877 /* MediaViewController.swift in Sources */,
+				58C9508F23B71E6D00FEBB56 /* ImagePickerViewCell.swift in Sources */,
 				58FEF0AD2322496C004669BF /* SkillsTreeViewController.swift in Sources */,
 				58FEF0A52322445F004669BF /* TabBarController.swift in Sources */,
-				58FEF0A7232248A9004669BF /* PlayerViewController.swift in Sources */,
+				58FEF0A7232248A9004669BF /* ProfileViewController.swift in Sources */,
+				58C9509D23B8D39100FEBB56 /* ShopListCollectionViewCell.swift in Sources */,
+				58C950A123B8E5F700FEBB56 /* ProductModel.swift in Sources */,
 				58FEF0B92327F6BF004669BF /* StableWorkViewController.swift in Sources */,
 				58B41576237AE18800B33271 /* PromotionViewController.swift in Sources */,
+				5809298D23AB48490034E850 /* UIDevice+Extensions.swift in Sources */,
 				58FEF0A9232248D3004669BF /* WorkViewController.swift in Sources */,
 				581F8ACE232A55710061D4E1 /* FreelanceJobListViewController.swift in Sources */,
 				588CC5DA23215D3E00239D2D /* UnknownGame.xcdatamodeld in Sources */,
+				584BEA0E23B4562F0079CBD7 /* JobModel.swift in Sources */,
+				581C4D7B23C713F1004965A6 /* UIStackView+Extensions.swift in Sources */,
+				584BEA0223B355750079CBD7 /* BioView.swift in Sources */,
+				58C9508C23B64F7100FEBB56 /* ProfileModel.swift in Sources */,
 				588B0222233DF7D600CCB9B7 /* VideoPlatformViewController.swift in Sources */,
 				581C51B923A2B297003FA609 /* PromotionPopularityViewController.swift in Sources */,
 				58FEF0AB232248FA004669BF /* ShopViewController.swift in Sources */,
-				581C51C023A4056D003FA609 /* Extensions+UIView.swift in Sources */,
+				58C9509323B71E9200FEBB56 /* CardModel.swift in Sources */,
+				581C51C023A4056D003FA609 /* UIView+Extensions.swift in Sources */,
+				584BEA1023B459B40079CBD7 /* ProfileBioModel.swift in Sources */,
 				581F8ACC232949480061D4E1 /* FreelanceViewController.swift in Sources */,
 				581F8AD0232B867F0061D4E1 /* ChooseWorkViewController.swift in Sources */,
 				581C51B723A2AA7F003FA609 /* PromotionFollowersViewController copy.swift in Sources */,
+				58C9509523B72A5500FEBB56 /* ImagePickerViewController.swift in Sources */,
+				58C9509F23B8D3CF00FEBB56 /* ShopListViewController.swift in Sources */,
+				584BE9FD23B251E30079CBD7 /* TabBarView.swift in Sources */,
+				584BEA0C23B454800079CBD7 /* PromotionModel.swift in Sources */,
 				588B0220233DF7C200CCB9B7 /* StreamTVViewController.swift in Sources */,
 				588CC5D223215D3E00239D2D /* AppDelegate.swift in Sources */,
+				584BEA0723B35C120079CBD7 /* ProfileChildViewController.swift in Sources */,
 				58FEF0B423225633004669BF /* Global.swift in Sources */,
+				584BEA0A23B454580079CBD7 /* MediaModel.swift in Sources */,
 				581F8AD2232B8AE20061D4E1 /* ChooseWorkChildViewController.swift in Sources */,
 				588B0224233E024200CCB9B7 /* StreamTVChildViewController.swift in Sources */,
+				58C9508823B64B6000FEBB56 /* CardView.swift in Sources */,
 				588B0226233E026000CCB9B7 /* VideoPlatformChildViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

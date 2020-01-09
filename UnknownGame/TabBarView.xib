@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TabBarController" customModule="UnknownGame" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TabBarView" customModule="UnknownGame" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="304" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LD8-AZ-EqD" customClass="RoundedCornerView" customModule="RoundedCornerView">
+                    <rect key="frame" x="0.0" y="0.0" width="304" height="60"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="constantRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="6Q9-Tt-sBR">
+                    <rect key="frame" x="5" y="5" width="294" height="50"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BEe-mk-3C7">
+                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="workIcon" translatesAutoresizingMaskIntoConstraints="NO" id="A1v-LC-6qg">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="A1v-LC-6qg" secondAttribute="height" multiplier="1:1" id="DMe-XR-r7a"/>
+                                    </constraints>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ySG-uc-3UN">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <connections>
+                                        <action selector="animateDown:" destination="iN0-l3-epB" eventType="touchDown" id="fVw-nW-QjA"/>
+                                        <action selector="animateDown:" destination="iN0-l3-epB" eventType="touchDragEnter" id="hWT-DR-L1I"/>
+                                        <action selector="animateUp:" destination="iN0-l3-epB" eventType="touchCancel" id="34p-s4-BSW"/>
+                                        <action selector="animateUp:" destination="iN0-l3-epB" eventType="touchDragExit" id="JkS-uL-SZb"/>
+                                        <action selector="tabBarButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="lkE-PL-AgF"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="A1v-LC-6qg" secondAttribute="trailing" id="93v-gr-oxP"/>
+                                <constraint firstItem="A1v-LC-6qg" firstAttribute="leading" secondItem="BEe-mk-3C7" secondAttribute="leading" id="9sK-7l-wUV"/>
+                                <constraint firstItem="A1v-LC-6qg" firstAttribute="top" secondItem="BEe-mk-3C7" secondAttribute="top" id="MEV-g1-Ib1"/>
+                                <constraint firstItem="ySG-uc-3UN" firstAttribute="centerX" secondItem="A1v-LC-6qg" secondAttribute="centerX" id="ML7-Fg-5aw"/>
+                                <constraint firstAttribute="bottom" secondItem="A1v-LC-6qg" secondAttribute="bottom" id="OeT-Yu-6S7"/>
+                                <constraint firstItem="ySG-uc-3UN" firstAttribute="width" secondItem="A1v-LC-6qg" secondAttribute="width" id="XiM-KV-BeE"/>
+                                <constraint firstItem="ySG-uc-3UN" firstAttribute="centerY" secondItem="A1v-LC-6qg" secondAttribute="centerY" id="Zdf-ev-cyP"/>
+                                <constraint firstAttribute="width" secondItem="BEe-mk-3C7" secondAttribute="height" multiplier="1:1" id="ZeE-n4-eUb"/>
+                                <constraint firstItem="ySG-uc-3UN" firstAttribute="height" secondItem="A1v-LC-6qg" secondAttribute="height" id="hpE-Nk-2HB"/>
+                            </constraints>
+                        </view>
+                        <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0eH-0j-WHE">
+                            <rect key="frame" x="61" y="0.0" width="50" height="50"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="experienceIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Xrq-9h-ql8">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                </imageView>
+                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dU-k3-tcw">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <connections>
+                                        <action selector="animateDown:" destination="iN0-l3-epB" eventType="touchDown" id="5nt-hH-eqE"/>
+                                        <action selector="animateDown:" destination="iN0-l3-epB" eventType="touchDragEnter" id="yZ2-kU-d2M"/>
+                                        <action selector="animateUp:" destination="iN0-l3-epB" eventType="touchCancel" id="B2h-wp-hlQ"/>
+                                        <action selector="animateUp:" destination="iN0-l3-epB" eventType="touchDragExit" id="sWU-lR-rfb"/>
+                                        <action selector="tabBarButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="Guo-r0-1HV"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="Xrq-9h-ql8" secondAttribute="trailing" id="BII-RP-Sla"/>
+                                <constraint firstItem="7dU-k3-tcw" firstAttribute="height" secondItem="0eH-0j-WHE" secondAttribute="height" id="JOL-gW-zui"/>
+                                <constraint firstItem="Xrq-9h-ql8" firstAttribute="leading" secondItem="0eH-0j-WHE" secondAttribute="leading" id="Lh4-W0-c2r"/>
+                                <constraint firstItem="7dU-k3-tcw" firstAttribute="centerY" secondItem="0eH-0j-WHE" secondAttribute="centerY" id="NbP-s7-QvM"/>
+                                <constraint firstItem="Xrq-9h-ql8" firstAttribute="top" secondItem="0eH-0j-WHE" secondAttribute="top" id="RTd-30-atN"/>
+                                <constraint firstItem="7dU-k3-tcw" firstAttribute="width" secondItem="0eH-0j-WHE" secondAttribute="width" id="Ztn-dr-aVH"/>
+                                <constraint firstItem="7dU-k3-tcw" firstAttribute="centerX" secondItem="0eH-0j-WHE" secondAttribute="centerX" id="hJx-dt-W1a"/>
+                                <constraint firstAttribute="bottom" secondItem="Xrq-9h-ql8" secondAttribute="bottom" id="zPD-Mf-eDr"/>
+                            </constraints>
+                        </view>
+                        <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PLn-yW-v3d">
+                            <rect key="frame" x="122" y="0.0" width="50" height="50"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="1qP-Yv-EAC">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                </imageView>
+                                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V7u-uf-nOq">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <connections>
+                                        <action selector="animateDown:" destination="iN0-l3-epB" eventType="touchDown" id="8uo-Kr-NHN"/>
+                                        <action selector="animateDown:" destination="iN0-l3-epB" eventType="touchDragEnter" id="zhN-59-CC8"/>
+                                        <action selector="animateUp:" destination="iN0-l3-epB" eventType="touchCancel" id="HNe-Q8-VKb"/>
+                                        <action selector="animateUp:" destination="iN0-l3-epB" eventType="touchDragExit" id="ZPY-A5-uId"/>
+                                        <action selector="tabBarButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="oBf-bE-5VU"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="1qP-Yv-EAC" secondAttribute="bottom" id="AEO-n2-bdi"/>
+                                <constraint firstItem="V7u-uf-nOq" firstAttribute="centerY" secondItem="PLn-yW-v3d" secondAttribute="centerY" id="IKg-Hk-tkV"/>
+                                <constraint firstItem="1qP-Yv-EAC" firstAttribute="leading" secondItem="PLn-yW-v3d" secondAttribute="leading" id="O3L-2f-y1z"/>
+                                <constraint firstAttribute="trailing" secondItem="1qP-Yv-EAC" secondAttribute="trailing" id="Oka-cD-TKB"/>
+                                <constraint firstItem="V7u-uf-nOq" firstAttribute="centerX" secondItem="PLn-yW-v3d" secondAttribute="centerX" id="Oqt-Rl-vGm"/>
+                                <constraint firstItem="V7u-uf-nOq" firstAttribute="width" secondItem="PLn-yW-v3d" secondAttribute="width" id="XYS-Cm-0AA"/>
+                                <constraint firstItem="1qP-Yv-EAC" firstAttribute="top" secondItem="PLn-yW-v3d" secondAttribute="top" id="YvI-hb-U29"/>
+                                <constraint firstItem="V7u-uf-nOq" firstAttribute="height" secondItem="PLn-yW-v3d" secondAttribute="height" id="z7I-DS-Twh"/>
+                            </constraints>
+                        </view>
+                        <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="arG-yU-ibD">
+                            <rect key="frame" x="183" y="0.0" width="50" height="50"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shopIcon" translatesAutoresizingMaskIntoConstraints="NO" id="cIp-dP-wZx">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                </imageView>
+                                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P0N-LS-a1p">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <connections>
+                                        <action selector="animateDown:" destination="iN0-l3-epB" eventType="touchDown" id="XwC-ko-cZt"/>
+                                        <action selector="animateDown:" destination="iN0-l3-epB" eventType="touchDragEnter" id="fxt-yR-Ib7"/>
+                                        <action selector="animateUp:" destination="iN0-l3-epB" eventType="touchDragExit" id="NqZ-MD-ul0"/>
+                                        <action selector="animateUp:" destination="iN0-l3-epB" eventType="touchCancel" id="hLd-Vu-H7a"/>
+                                        <action selector="tabBarButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="GLF-4e-ToH"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="P0N-LS-a1p" firstAttribute="height" secondItem="arG-yU-ibD" secondAttribute="height" id="1DL-vb-7j4"/>
+                                <constraint firstItem="P0N-LS-a1p" firstAttribute="centerX" secondItem="arG-yU-ibD" secondAttribute="centerX" id="2dZ-dG-7N9"/>
+                                <constraint firstItem="cIp-dP-wZx" firstAttribute="top" secondItem="arG-yU-ibD" secondAttribute="top" id="6sb-28-Qug"/>
+                                <constraint firstItem="P0N-LS-a1p" firstAttribute="centerY" secondItem="arG-yU-ibD" secondAttribute="centerY" id="AB7-Dc-RwJ"/>
+                                <constraint firstItem="P0N-LS-a1p" firstAttribute="width" secondItem="arG-yU-ibD" secondAttribute="width" id="CIe-9g-nvD"/>
+                                <constraint firstAttribute="trailing" secondItem="cIp-dP-wZx" secondAttribute="trailing" id="ERo-PN-0EU"/>
+                                <constraint firstAttribute="bottom" secondItem="cIp-dP-wZx" secondAttribute="bottom" id="M37-ht-PCo"/>
+                                <constraint firstItem="cIp-dP-wZx" firstAttribute="leading" secondItem="arG-yU-ibD" secondAttribute="leading" id="vhn-7B-Rdd"/>
+                            </constraints>
+                        </view>
+                        <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U5S-y7-pvG">
+                            <rect key="frame" x="244" y="0.0" width="50" height="50"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="archievmentsIcon" translatesAutoresizingMaskIntoConstraints="NO" id="k9g-my-VVG">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                </imageView>
+                                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hei-ln-kfG">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <connections>
+                                        <action selector="animateDown:" destination="iN0-l3-epB" eventType="touchDragEnter" id="OxZ-3A-9Sf"/>
+                                        <action selector="animateDown:" destination="iN0-l3-epB" eventType="touchDown" id="S1M-i1-85I"/>
+                                        <action selector="animateUp:" destination="iN0-l3-epB" eventType="touchCancel" id="01h-fK-MPf"/>
+                                        <action selector="animateUp:" destination="iN0-l3-epB" eventType="touchDragExit" id="Y3O-rZ-rnH"/>
+                                        <action selector="tabBarButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="4Jr-kr-ccd"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="hei-ln-kfG" firstAttribute="width" secondItem="U5S-y7-pvG" secondAttribute="width" id="832-7j-cd2"/>
+                                <constraint firstItem="hei-ln-kfG" firstAttribute="height" secondItem="U5S-y7-pvG" secondAttribute="height" id="E63-Dt-8WT"/>
+                                <constraint firstAttribute="trailing" secondItem="k9g-my-VVG" secondAttribute="trailing" id="JYV-ER-fNr"/>
+                                <constraint firstItem="k9g-my-VVG" firstAttribute="leading" secondItem="U5S-y7-pvG" secondAttribute="leading" id="MtS-X0-LOh"/>
+                                <constraint firstItem="hei-ln-kfG" firstAttribute="centerY" secondItem="U5S-y7-pvG" secondAttribute="centerY" id="eYg-0S-Woy"/>
+                                <constraint firstItem="hei-ln-kfG" firstAttribute="centerX" secondItem="U5S-y7-pvG" secondAttribute="centerX" id="eaV-pC-dJG"/>
+                                <constraint firstItem="k9g-my-VVG" firstAttribute="top" secondItem="U5S-y7-pvG" secondAttribute="top" id="onW-TY-w7v"/>
+                                <constraint firstAttribute="bottom" secondItem="k9g-my-VVG" secondAttribute="bottom" id="p11-f0-2kh"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="0eH-0j-WHE" firstAttribute="height" secondItem="BEe-mk-3C7" secondAttribute="height" id="AL9-tl-aCJ"/>
+                        <constraint firstItem="PLn-yW-v3d" firstAttribute="width" secondItem="BEe-mk-3C7" secondAttribute="width" id="Baj-K9-ANG"/>
+                        <constraint firstItem="U5S-y7-pvG" firstAttribute="height" secondItem="BEe-mk-3C7" secondAttribute="height" id="EUU-kP-JFX"/>
+                        <constraint firstItem="arG-yU-ibD" firstAttribute="height" secondItem="BEe-mk-3C7" secondAttribute="height" id="KX6-iF-ot2"/>
+                        <constraint firstItem="PLn-yW-v3d" firstAttribute="height" secondItem="BEe-mk-3C7" secondAttribute="height" id="ZbR-ax-RgW"/>
+                        <constraint firstItem="arG-yU-ibD" firstAttribute="width" secondItem="BEe-mk-3C7" secondAttribute="width" id="cdD-Fg-cxB"/>
+                        <constraint firstItem="0eH-0j-WHE" firstAttribute="width" secondItem="BEe-mk-3C7" secondAttribute="width" id="heb-EL-bjE"/>
+                        <constraint firstItem="U5S-y7-pvG" firstAttribute="width" secondItem="BEe-mk-3C7" secondAttribute="width" id="uO0-qT-fCe"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="6Q9-Tt-sBR" secondAttribute="trailing" constant="5" id="HLb-un-VWG"/>
+                <constraint firstAttribute="bottom" secondItem="6Q9-Tt-sBR" secondAttribute="bottom" constant="5" id="Ij1-fI-Mbc"/>
+                <constraint firstItem="6Q9-Tt-sBR" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="5" id="KGG-JI-ASv"/>
+                <constraint firstAttribute="bottom" secondItem="LD8-AZ-EqD" secondAttribute="bottom" id="Ole-n1-gRm"/>
+                <constraint firstItem="LD8-AZ-EqD" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="YgL-dF-ZBV"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="LD8-AZ-EqD" secondAttribute="trailing" id="q05-A8-w84"/>
+                <constraint firstItem="6Q9-Tt-sBR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="vTt-XU-hMo"/>
+                <constraint firstItem="LD8-AZ-EqD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="yi3-sz-Nfq"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outletCollection property="tabBarImageViewCollection" destination="A1v-LC-6qg" collectionClass="NSMutableArray" id="fwK-8Z-Uh3"/>
+                <outletCollection property="tabBarImageViewCollection" destination="Xrq-9h-ql8" collectionClass="NSMutableArray" id="cAt-pR-sh3"/>
+                <outletCollection property="tabBarImageViewCollection" destination="1qP-Yv-EAC" collectionClass="NSMutableArray" id="a3S-qF-9Nj"/>
+                <outletCollection property="tabBarImageViewCollection" destination="cIp-dP-wZx" collectionClass="NSMutableArray" id="qVx-Lp-YsD"/>
+                <outletCollection property="tabBarImageViewCollection" destination="k9g-my-VVG" collectionClass="NSMutableArray" id="QYF-X9-j8x"/>
+                <outletCollection property="buttonsOutletCollection" destination="ySG-uc-3UN" collectionClass="NSMutableArray" id="rch-o2-avN"/>
+                <outletCollection property="buttonsOutletCollection" destination="7dU-k3-tcw" collectionClass="NSMutableArray" id="D6A-VH-tGN"/>
+                <outletCollection property="buttonsOutletCollection" destination="V7u-uf-nOq" collectionClass="NSMutableArray" id="Iy9-uA-DCE"/>
+                <outletCollection property="buttonsOutletCollection" destination="P0N-LS-a1p" collectionClass="NSMutableArray" id="zHl-Zi-vpC"/>
+                <outletCollection property="buttonsOutletCollection" destination="hei-ln-kfG" collectionClass="NSMutableArray" id="3mb-XO-fai"/>
+                <outletCollection property="tabBarViewCollection" destination="BEe-mk-3C7" collectionClass="NSMutableArray" id="smz-EX-7Ow"/>
+                <outletCollection property="tabBarViewCollection" destination="0eH-0j-WHE" collectionClass="NSMutableArray" id="hQR-83-XHE"/>
+                <outletCollection property="tabBarViewCollection" destination="PLn-yW-v3d" collectionClass="NSMutableArray" id="kSt-Nx-dti"/>
+                <outletCollection property="tabBarViewCollection" destination="arG-yU-ibD" collectionClass="NSMutableArray" id="L62-Un-scs"/>
+                <outletCollection property="tabBarViewCollection" destination="U5S-y7-pvG" collectionClass="NSMutableArray" id="UVL-J7-2k7"/>
+            </connections>
+            <point key="canvasLocation" x="159" y="94"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="archievmentsIcon" width="100" height="100"/>
+        <image name="experienceIcon" width="100" height="100"/>
+        <image name="profileIcon" width="100" height="100"/>
+        <image name="shopIcon" width="100" height="100"/>
+        <image name="workIcon" width="100" height="100"/>
+    </resources>
+</document>

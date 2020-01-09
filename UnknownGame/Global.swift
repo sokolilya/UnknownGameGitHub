@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 
+    // MARK: – Genegal Global Variables
+
 var playerStatus = 100
 var playerMastery = 0.0
 var ddIndex = 0
@@ -20,6 +22,8 @@ var statusTimeEdge = 20
 var dollars = 0
 
 var firstLaunch = true
+
+    // MARK: – Work Global Variables
 
 var salary = 0
 var workStartTime = 0
@@ -37,32 +41,8 @@ var workStartTimeArr: [Int] = [7, 9, 13, 8, 7]
 var workEndTimeArr: [Int] = [17, 21, 19, 15, 21]
 var workNameArr: [String] = ["Demo Lebel 1", "Demo Lebel 2", "Demo Lebel 3", "Demo Lebel 4", "Demo Lebel 5"]
 
+    // MARK: – Job Global Variables
 
-class Job : NSObject, NSCoding {
-    func encode(with coder: NSCoder) {
-        coder.encode(name, forKey: "jobName")
-        coder.encode(salary, forKey: "jobSalary")
-        coder.encode(deadline, forKey: "jobDeadline")
-    }
-    
-    required convenience init(coder: NSCoder) {
-        let name = coder.decodeObject(forKey: "jobName") as! String
-        let salary = coder.decodeInteger(forKey: "jobSalary")
-        let deadline = coder.decodeInteger(forKey: "jobDeadline")
-        
-        self.init(name: name, salary: salary, deadline: deadline)
-    }
-    
-    init(name: String, salary: Int, deadline: Int) {
-        self.name = name
-        self.salary = salary
-        self.deadline = deadline
-    }
-    
-    var name : String = ""
-    var salary : Int
-    var deadline : Int
-}
 var hasFreelance = false
 var freelanceSalary = 0
 var isHourly = false
@@ -83,48 +63,7 @@ var takeJobFixedPrice : [Job] = []
 var takeJobHourly : [Job] = []
 var freelanceJobNames = ["Develop Website", "Create iOS Game", "Need iOS Developer", "Need Developer", "Full-Stack Developer", "Add New Features", "Need App Developer", "Create Transport App", "Android and iOS App", "Mobile App Development", "Native iOS Developer", "Native Android Developer", "Skilled Developer", "Game Tester", "Need Tester", "Skilled iOS Developer", "Clone App", "Reskin App", "Deploy App to Store", "Bug Fixes Needed", "Copyrighter needed", "Develop Music App", "Develop iPad App", "Improve My App", "Upload App to Store", "Answer Questions", "Database", "Database App", "Swift Developer", "Kotlin Developer", "Help With SturtUp", "Consult Needed", "Copy Existing App", "Flutter Developer", "Create 2D Game", "Create 3D Game", "Develop Android App", "Android App", "iOS App", "PHP Developer", "Create Website", "React Native Developer", "Mobile App", "Convert Mobile App", "Convert Code", "Developer Needed", "VR Game", "VR Developer", "Develop VR Game", "Kotlin Expert", "Swift Expert", "Convert My App", "Designer Needed", "Create Design", "Re-Design My App", "Reskin My App", "Only Real People", "Only Developers", "Only Designers", "Java Developer", "Java App", "Java Expert", "C++ Developer", "Consult With C++", "C++ Bug Fixes", "Java Bug Fixes", "App for iPhone", "Skilled Developer"]
 
-class Media : NSObject, NSCoding {
-    
-    func encode(with coder: NSCoder) {
-        coder.encode(name, forKey: "mediaName")
-        coder.encode(popularity, forKey: "mediaPopularity")
-        coder.encode(followers, forKey: "mediaFollowers")
-        coder.encode(avgSalary, forKey: "mediaAvgSalary")
-        coder.encode(neededTime, forKey: "mediaNeededTime")
-        coder.encode(startTime, forKey: "mediaStartTime")
-        coder.encode(mediaTime, forKey: "mediaTime")
-    }
-    
-    required convenience init(coder: NSCoder) {
-        let name = coder.decodeObject(forKey: "mediaName") as? String ?? ""
-        let popularity = coder.decodeInteger(forKey: "mediaPopularity")
-        let followers = coder.decodeInteger(forKey: "mediaFollowers")
-        let avgSalary = coder.decodeInteger(forKey: "mediaAvgSalary")
-        let neededTime = coder.decodeInteger(forKey: "mediaNeededTime")
-        let startTime = coder.decodeBool(forKey: "mediaStartTime")
-        let mediaTime = coder.decodeInteger(forKey: "mediaTime")
-        
-        self.init(name: name, popularity: popularity, followers: followers, avgSalary: avgSalary, neededTime: neededTime, startTime: startTime, mediaTime: mediaTime)
-    }
-    
-    init(name: String, popularity: Int, followers: Int, avgSalary: Int, neededTime: Int, startTime: Bool, mediaTime: Int) {
-        self.name = name
-        self.popularity = popularity
-        self.followers = followers
-        self.avgSalary = avgSalary
-        self.neededTime = neededTime
-        self.startTime = startTime
-        self.mediaTime = mediaTime
-    }
-    
-    var name : String = ""
-    var popularity : Int = 0
-    var followers : Int = 0
-    var avgSalary : Int = 0
-    var neededTime : Int = 0
-    var startTime : Bool = false
-    var mediaTime : Int = 0
-}
+    // MARK: – Media Global Variables
 
 var streamTVArr : [Media] = []
 var streamTVSavedArr : [Media] = []
@@ -146,42 +85,7 @@ var videoPlatformAvgSalaryArr : [Int] = [50, 60, 40, 10, 70, 60, 100, 40, 30, 50
 let videoPlatformNeededTimeArr : [Int] = [10, 15, 8, 3, 13, 12, 9, 11, 8, 10]
 var videoPlatformLF = 0
 
-class Promotion: NSObject, NSCoding {
-    func encode(with coder: NSCoder) {
-        coder.encode(name, forKey: "promoName")
-        coder.encode(popularity, forKey: "promoPopularity")
-        coder.encode(followers, forKey: "promoFollowers")
-        coder.encode(cost, forKey: "promoCost")
-        coder.encode(isStreamTV, forKey: "promoIsStreamTV")
-    }
-    
-    required convenience init(coder: NSCoder) {
-        let name = coder.decodeObject(forKey: "promoName") as! String
-        let popularity = coder.decodeInteger(forKey: "promoPopularity")
-        let followers = coder.decodeInteger(forKey: "promoFollowers")
-        let cost = coder.decodeInteger(forKey: "promoCost")
-        let isStreamTV = coder.decodeBool(forKey: "promoIsStreamTV")
-        let isPopularity = coder.decodeBool(forKey: "promoIsPopularity")
-        
-        self.init(name: name, popularity: popularity, followers: followers, cost: cost, isStreamTV: isStreamTV, isPopularity: isPopularity)
-    }
-    
-    init(name: String, popularity: Int, followers: Int, cost: Int, isStreamTV: Bool, isPopularity: Bool) {
-        self.name = name
-        self.popularity = popularity
-        self.followers = followers
-        self.cost = cost
-        self.isStreamTV = isStreamTV
-        self.isPopularity = isPopularity
-    }
-    
-    var name : String = ""
-    var popularity : Int = 0
-    var followers : Int = 0
-    var cost : Int = 0
-    var isStreamTV : Bool = false
-    var isPopularity : Bool = false
-}
+    // MARK: – Promotion Global Variables
 
 var isStreamTV = false
 var promotion : [Promotion] = [Promotion(name: "Test Pop", popularity: 111, followers:                                                111, cost: 111, isStreamTV: true, isPopularity: true),
@@ -189,3 +93,66 @@ var promotion : [Promotion] = [Promotion(name: "Test Pop", popularity: 111, foll
                                Promotion(name: "Test Followers Stream Promo 2", popularity: 222, followers: 222, cost: 222, isStreamTV: true, isPopularity: false),
                                Promotion(name: "Test Popularity Video Platform Promo", popularity: 111, followers: 111, cost: 111, isStreamTV: false, isPopularity: true),
                                Promotion(name: "Test Followers Video Platform Promo", popularity: 111, followers: 111, cost: 111, isStreamTV: false, isPopularity: false)]
+
+var currentVC : Int = 0
+var destinationVC : Int = 0
+
+    // MARK: – Profile Global Variables
+
+var player : ProfileModel = ProfileModel(name: "", image: "", imageBackground: "", bio: [ProfileBio(name: "", info: "", imageName: ""),
+                                                                                                                            ProfileBio(name: "", info: "", imageName: ""),
+                                                                                                                               ProfileBio(name: "", info: "", imageName: ""),
+                                                                                                                    ProfileBio(name: "", info: "", imageName: "")])
+
+
+let placeholderImages : [String] = ["placeholder_1_1", "placeholder_1_2", "placeholder_1_3", "placeholder_1_4", "placeholder_1_5"]
+let placeholderBackgroundImages : [String] = ["placeholderBackground_1", "placeholderBackground_2", "placeholderBackground_3", "placeholderBackground_4", "placeholderBackground_5", "placeholderBackground_6", "placeholderBackground_7", "placeholderBackground_8", "placeholderBackground_9"]
+var placeholderImageIndex : Int = -1
+var placeholderBackgroundImageIndex : Int = -1
+var segmentedControllerIndex : Int = 0
+
+    // MARK: – Shop Global Variables
+
+var shopTag : Int = 0
+var shopIndex : Int = 0
+var toShop_Name : String = ""
+var product_realty : [ProductModel] = [
+                                        ProductModel(name: "Rental Hostel", imageName: "hostel", bio: "You and your 3 roommates", cost: 1000, isBuyed: false, isRent: true),
+                                        ProductModel(name: "Rental Flat", imageName: "flat_1", bio: "You live alone, but in the rental realty", cost: 3000, isBuyed: false, isRent: true),
+                                        ProductModel(name: "Room", imageName: "room", bio: "", cost: 7000, isBuyed: false, isRent: false),
+                                        ProductModel(name: "Rental Apartments", imageName: "apartments_1", bio: "", cost: 15000, isBuyed: false, isRent: true),
+                                        ProductModel(name: "Flat", imageName: "flat_2", bio: "", cost: 100000, isBuyed: false, isRent: false),
+                                        ProductModel(name: "Apartments", imageName: "apartments_2", bio: "", cost: 500000, isBuyed: false, isRent: false),
+                                        ProductModel(name: "Cottage", imageName: "cottage", bio: "", cost: 1000000, isBuyed: false, isRent: false),
+                                        ProductModel(name: "Penthouse", imageName: "penthouse", bio: "", cost: 3000000, isBuyed: false, isRent: false),
+                                        ProductModel(name: "Villa", imageName: "villa", bio: "", cost: 7000000, isBuyed: false, isRent: false),
+                                        ProductModel(name: "Castle", imageName: "castle", bio: "", cost: 30000000, isBuyed: false, isRent: false)
+                                       ]
+var product_transport : [ProductModel] = [
+                                          ProductModel(name: "Scooter", imageName: "scooter_1", bio: "", cost: 150, isBuyed: false, isRent: false),
+                                          ProductModel(name: "Bycicle", imageName: "bycicle_1", bio: "", cost: 270, isBuyed: false, isRent: false),
+                                          ProductModel(name: "Electric Scooter", imageName: "scooter_2", bio: "", cost: 450, isBuyed: false, isRent: false),
+                                          ProductModel(name: "Electric Bycicle", imageName: "bycicle_2", bio: "", cost: 1000, isBuyed: false, isRent: false),
+                                          ProductModel(name: "Cheepest Old Car", imageName: "car_1", bio: "", cost: 5000, isBuyed: false, isRent: false),
+                                          ProductModel(name: "Common Car", imageName: "car_2", bio: "", cost: 20000, isBuyed: false, isRent: false),
+                                          ProductModel(name: "Lux Car", imageName: "car_3", bio: "", cost: 100000, isBuyed: false, isRent: false),
+                                          ProductModel(name: "Retro Car", imageName: "car_4", bio: "", cost: 250000, isBuyed: false, isRent: false),
+                                          ProductModel(name: "Helicopter", imageName: "helicopter", bio: "", cost: 750000, isBuyed: false, isRent: false),
+                                          ProductModel(name: "Yacht", imageName: "ship", bio: "", cost: 3000000, isBuyed: false, isRent: false),
+                                          ProductModel(name: "Airplain", imageName: "airplain", bio: "", cost: 15000000, isBuyed: false, isRent: false),
+                                        ]
+var product_phone : [ProductModel] = [
+                                      ProductModel(name: "Old phone", imageName: "phone_1", bio: "", cost: 100, isBuyed: false, isRent: false),
+                                      ProductModel(name: "PPC", imageName: "phone_2", bio: "", cost: 200, isBuyed: false, isRent: false),
+                                      ProductModel(name: "Strange Phone", imageName: "phone_3", bio: "", cost: 350, isBuyed: false, isRent: false),
+                                      ProductModel(name: "Smartphone", imageName: "phone_4", bio: "", cost: 500, isBuyed: false, isRent: false),
+                                      ProductModel(name: "Best Smartphone", imageName: "phone_5", bio: "", cost: 1500, isBuyed: false, isRent: false),
+                                      ProductModel(name: "Exclusive Phone", imageName: "phone_6", bio: "", cost: 100000, isBuyed: false, isRent: false)
+                                        ]
+var product_pc : [ProductModel] = [
+                                   ProductModel(name: "Cheep", imageName: "pc_1", bio: "", cost: 500, isBuyed: false, isRent: false),
+                                   ProductModel(name: "Bad", imageName: "pc_2", bio: "", cost: 1200, isBuyed: false, isRent: false),
+                                   ProductModel(name: "Medium", imageName: "pc_3", bio: "", cost: 2500, isBuyed: false, isRent: false),
+                                   ProductModel(name: "Cool", imageName: "pc_4", bio: "", cost: 6000, isBuyed: false, isRent: false),
+                                   ProductModel(name: "Expensive", imageName: "pc_5", bio: "Best of the Best", cost: 15000, isBuyed: false, isRent: false)
+                                    ]

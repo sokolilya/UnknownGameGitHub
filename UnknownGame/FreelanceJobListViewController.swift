@@ -21,9 +21,11 @@ class FreelanceJobListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupUI()
         selectCase()
     }
     
+    @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet var fixedPriceViews: [UIView]!
     @IBOutlet var fixedPriceJobNameLabels: [UILabel]!
     @IBOutlet var fixedPriceJobSalaryLabel: [UILabel]!
@@ -436,3 +438,20 @@ extension FreelanceJobListViewController {
         UserDefaults.standard.set(encodedTakeHourlyData, forKey: "takeJobHourlyArr")
     }
 }
+
+extension FreelanceJobListViewController {
+    
+    func setupUI() {
+        let modelName = UIDevice.modelName
+        print(modelName)
+        
+        switch modelName {
+        case "iPhone X", "iPhone XS", "iPhone XS Max", "iPhone XR", "iPhone 11", "iPhone 11 Pro", "iPhone 11 Pro Max":
+            backgroundImage.image = UIImage(named: "background_3_11")
+        default:
+            backgroundImage.image = UIImage(named: "background_3_8")
+        }
+    }
+    
+}
+

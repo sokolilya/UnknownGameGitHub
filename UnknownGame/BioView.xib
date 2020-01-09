@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BioView" customModule="UnknownGame" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MlS-NJ-kWA">
+                    <rect key="frame" x="16" y="3" width="268" height="54"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XRa-5q-p2S">
+                            <rect key="frame" x="0.0" y="0.0" width="49" height="54"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bd1-t3-v3k">
+                                    <rect key="frame" x="5" y="5" width="44" height="44"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="Bd1-t3-v3k" secondAttribute="height" multiplier="1:1" id="mOY-uy-W6x"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="Bd1-t3-v3k" firstAttribute="leading" secondItem="XRa-5q-p2S" secondAttribute="leading" constant="5" identifier="bioImage_Left" id="A5q-ya-xpo"/>
+                                <constraint firstItem="Bd1-t3-v3k" firstAttribute="top" secondItem="XRa-5q-p2S" secondAttribute="top" constant="5" identifier="bioImage_Top" id="PBN-lN-0AJ"/>
+                                <constraint firstAttribute="bottom" secondItem="Bd1-t3-v3k" secondAttribute="bottom" constant="5" identifier="bioImage_Bottom" id="X0m-2m-o64"/>
+                                <constraint firstAttribute="trailing" secondItem="Bd1-t3-v3k" secondAttribute="trailing" identifier="bioImage_Right" id="iXP-qM-b3i"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yhw-C3-4Cp">
+                            <rect key="frame" x="49" y="0.0" width="219" height="54"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="F9B-Ra-fub">
+                                    <rect key="frame" x="8" y="3" width="206" height="48"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%Name%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fnk-QI-eBc">
+                                            <rect key="frame" x="0.0" y="0.0" width="206" height="21.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="sdlkfnsdlkvnslkdnclksdlksdvlksndlkvnsdvnslkdvlksdnvlksdnvlksdvsdfsdfsdfsdfsdf" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aCg-My-7ME">
+                                            <rect key="frame" x="0.0" y="21.5" width="206" height="26.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                            <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="F9B-Ra-fub" secondAttribute="bottom" constant="3" id="Joj-ae-AAn"/>
+                                <constraint firstItem="F9B-Ra-fub" firstAttribute="leading" secondItem="Yhw-C3-4Cp" secondAttribute="leading" constant="8" id="bfg-Sv-Xdw"/>
+                                <constraint firstAttribute="trailing" secondItem="F9B-Ra-fub" secondAttribute="trailing" constant="5" id="bvu-cG-coa"/>
+                                <constraint firstItem="F9B-Ra-fub" firstAttribute="top" secondItem="Yhw-C3-4Cp" secondAttribute="top" constant="3" id="x9S-8l-z5M"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="XRa-5q-p2S" firstAttribute="height" secondItem="fnk-QI-eBc" secondAttribute="height" multiplier="2.5" id="oct-Mk-5xF"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="MlS-NJ-kWA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="3" id="TNt-MO-dtd"/>
+                <constraint firstAttribute="bottom" secondItem="MlS-NJ-kWA" secondAttribute="bottom" constant="3" id="gmL-1K-tze"/>
+                <constraint firstItem="MlS-NJ-kWA" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="mdz-Bz-2h7"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="MlS-NJ-kWA" secondAttribute="trailing" constant="16" id="nPH-JG-A8t"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="bioImageView" destination="Bd1-t3-v3k" id="mFX-Qr-mut"/>
+                <outlet property="bioInfoLabel" destination="aCg-My-7ME" id="bBA-KG-ixP"/>
+                <outlet property="bioNameLabel" destination="fnk-QI-eBc" id="cVK-a9-Z8Q"/>
+                <outlet property="viewForImageView" destination="XRa-5q-p2S" id="ZFC-Hl-FIF"/>
+            </connections>
+            <point key="canvasLocation" x="156.52173913043478" y="119.19642857142857"/>
+        </view>
+    </objects>
+</document>

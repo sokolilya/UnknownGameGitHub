@@ -49,10 +49,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func saveData() {
-        let userDefaults = UserDefaults.standard
-        
-        let encodedStreamTVArrData : Data = NSKeyedArchiver.archivedData(withRootObject: streamTVArr)
-        userDefaults.set(encodedStreamTVArrData, forKey: "StreamTVArray")
+//        let userDefaults = UserDefaults.standard
+//
+//        let encodedStreamTVArrData : Data = NSKeyedArchiver.archivedData(withRootObject: streamTVArr)
+//        userDefaults.set(encodedStreamTVArrData, forKey: "StreamTVArray")
     }
     
     func readData() {
@@ -144,6 +144,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         if let decodedTH = userDefaults.data(forKey: "takeJobHourlyArr") {
             takeJobHourly = NSKeyedUnarchiver.unarchiveObject(with: decodedTH) as! [Job]
+        }
+        
+        // Profile
+        
+        if let decodedProfileData = userDefaults.data(forKey: "ProfileData") {
+            player = NSKeyedUnarchiver.unarchiveObject(with: decodedProfileData) as! ProfileModel
         }
         
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: "updateWork"), object: nil)

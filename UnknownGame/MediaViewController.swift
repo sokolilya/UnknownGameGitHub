@@ -18,6 +18,8 @@ class MediaViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(updateProgressViews), name: NSNotification.Name("updateMediaProgress"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(updateLabels), name: NSNotification.Name("updateMediaLabels"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(updateProgressView), name: NSNotification.Name("updateMediaProgressView"), object: nil)
+        
+        setupUI()
         checkAvgSalary()
         updateProgressViews()
     }
@@ -29,6 +31,7 @@ class MediaViewController: UIViewController {
         updateProgressViews()
     }
     
+    @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet weak var streamTVLabel: UILabel!
     @IBOutlet var streamTVstatsLabels: [UILabel]!
     @IBOutlet weak var videoPlatformLabel: UILabel!
@@ -92,7 +95,7 @@ class MediaViewController: UIViewController {
         if streamTV.popularity == 0 && streamTV.followers == 0 {
             streamTVstatsLabels[2].text = "–"
         } else {
-            streamTVstatsLabels[2].text = "\(streamTVTransfer.avgSalary)"
+            streamTVstatsLabels[2].text = "\(streamTV.avgSalary)"
         }
         
         if streamTV.startTime {
@@ -121,7 +124,7 @@ class MediaViewController: UIViewController {
             videoPlatformProgressView.setProgress(0, animated: true)
             videoPlatformButtonOutlet.isUserInteractionEnabled = true
             
-            let encodedData : Data = NSKeyedArchiver.archivedData(withRootObject: streamTV)
+            let encodedData : Data = NSKeyedArchiver.archivedData(withRootObject: videoPlatform)
             UserDefaults.standard.set(encodedData, forKey: "VideoPlatform")
         } else {
             videoPlatformButtonOutlet.isUserInteractionEnabled = false
@@ -135,29 +138,29 @@ class MediaViewController: UIViewController {
         var streamTVAvgDonate = 0
         var videoPlatformAvgSalary = 0
         
-        for index in 0...streamTVArr.count - 1 {
-            if streamTV.followers % 25 == 0 && streamTV.followers != streamTVLF {
-                streamTVArr[index].avgSalary += 1
+        streamTVArr.forEach { (stream) in
+            if stream.followers % 25 == 0 && streamTV.followers != streamTVLF {
+                stream.avgSalary += 1
                 streamTVLF = streamTV.followers
                 UserDefaults.standard.set(streamTVLF, forKey: "StreamTVLastFollower")
             }
-            
-            streamTVAvgDonate += streamTVArr[index].avgSalary
+            streamTVAvgDonate += stream.avgSalary
         }
+        
         let encodedStreamTVData : Data = NSKeyedArchiver.archivedData(withRootObject: streamTVArr)
         UserDefaults.standard.set(encodedStreamTVData, forKey: "StreamTVArray")
         
         streamTV.avgSalary = streamTVAvgDonate / streamTVArr.count
         
-        for index in 0...videoPlatformArr.count - 1 {
-            if videoPlatform.followers % 25 == 0 && videoPlatform.followers != videoPlatformLF {
-                videoPlatformArr[index].avgSalary += 1
+        videoPlatformArr.forEach { (video) in
+            if video.followers % 25 == 0 && videoPlatform.followers != videoPlatformLF {
+                video.avgSalary += 1
                 videoPlatformLF = videoPlatform.followers
                 UserDefaults.standard.set(videoPlatformLF, forKey: "VideoPlatformLastFollower")
             }
-            
-            videoPlatformAvgSalary += videoPlatformArr[index].avgSalary
+            videoPlatformAvgSalary += video.avgSalary
         }
+        
         let encodedVideoPlatformData : Data = NSKeyedArchiver.archivedData(withRootObject: videoPlatformArr)
         UserDefaults.standard.set(encodedVideoPlatformData, forKey: "VideoPlatformArray")
         
@@ -167,3 +170,20 @@ class MediaViewController: UIViewController {
     }
     
 }
+
+extension MediaViewController {
+    
+    func setupUI() {
+        let modelName = UIDevice.modelName
+        print(modelName)
+        
+        switch modelName {
+        case "iPhone X", "iPhone XS", "iPhone XS Max", "iPhone XR", "iPhone 11", "iPhone 11 Pro", "iPhone 11 Pro Max":
+            backgroundImage.image = UIImage(named: "background_4_11")
+        default:
+            backgroundImage.image = UIImage(named: "background_4_8")
+        }
+    }
+    
+}
+

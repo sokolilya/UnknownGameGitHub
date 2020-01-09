@@ -22,6 +22,9 @@ class WorkViewController: UIViewController {
         
         self.tabBarController?.tabBar.isHidden = true
         
+        setupUI()
+        setupTabBar()
+        
         loadData()
         updateStreamTV()
         updateVideoPlatform()
@@ -33,6 +36,8 @@ class WorkViewController: UIViewController {
         checkFreelance()
     }
     
+    @IBOutlet weak var tabBarView: UIView!
+    @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var playerStatusLabel: UILabel!
     @IBOutlet weak var dollarsLabel: UILabel!
@@ -244,7 +249,7 @@ extension WorkViewController {
             }
         }
         
-        if mm % statusTimeEdge == 0 && playerStatus > 0 {
+        if mm % statusTimeEdge == 0 && playerStatus > 0 && hasWork {
             playerStatus -= 1
         }
         
@@ -381,6 +386,12 @@ extension WorkViewController {
         if let decodedTH = userDefaults.data(forKey: "takeJobHourlyArr") {
             takeJobHourly = NSKeyedUnarchiver.unarchiveObject(with: decodedTH) as! [Job]
         }
+        
+        // Profile
+        
+        if let decodedProfileData = userDefaults.data(forKey: "ProfileData") {
+            player = NSKeyedUnarchiver.unarchiveObject(with: decodedProfileData) as! ProfileModel
+        }
     }
     
     func checkFreelance() {
@@ -490,4 +501,65 @@ extension WorkViewController {
             }
         }
     }
+}
+
+extension WorkViewController {
+    
+    func setupUI() {
+        let modelName = UIDevice.modelName
+        
+        switch modelName {
+        case "iPhone X", "iPhone XS", "iPhone XS Max", "iPhone XR", "iPhone 11", "iPhone 11 Pro", "iPhone 11 Pro Max":
+            backgroundImage.image = UIImage(named: "background_1_11")
+        default:
+            backgroundImage.image = UIImage(named: "background_1_8")
+        }
+    }
+    
+    func setupTabBar() {
+        if let tabBarViewSelf = Bundle.main.loadNibNamed("TabBarView", owner: self, options: nil)?.first as? TabBarView {
+            
+            NotificationCenter.default.addObserver(self, selector: #selector(animateTabBarDown), name: NSNotification.Name(rawValue: "AnimateTabBar_Down"), object: nil)
+            NotificationCenter.default.addObserver(self, selector: #selector(animateTabBarUp), name: NSNotification.Name(rawValue: "AnimateTabBar_Up"), object: nil)
+            
+            let modelName = UIDevice.modelName
+            
+            switch modelName {
+            case "iPhone X", "iPhone XS", "iPhone XS Max", "iPhone XR", "iPhone 11", "iPhone 11 Pro", "iPhone 11 Pro Max":
+                self.tabBarView.addSubview(tabBarViewSelf)
+                self.view.constraints.forEach { (c) in
+                    if c.identifier == "tabBarBottom" {
+                        c.constant = 32
+                    }
+                }
+                self.tabBarView.layoutIfNeeded()
+            default:
+                self.tabBarView.addSubview(tabBarViewSelf)
+            }
+        }
+        
+    }
+    
+    @objc func animateTabBarDown() {
+        UIView.animate(withDuration: 0.3, animations: {
+            self.tabBarView.transform = CGAffineTransform(scaleX: 0.95, y: 0.95)
+        }) { (_) in
+            UIView.animate(withDuration: 0.3) {
+                self.tabBarView.transform = CGAffineTransform.identity
+            }
+        }
+    }
+    
+    @objc func animateTabBarUp() {
+        UIView.animate(withDuration: 0.3, animations: {
+            self.tabBarView.transform = CGAffineTransform(scaleX: 1.05, y: 1.05)
+        }, completion: { (_) in
+            UIView.animate(withDuration: 0.1) {
+                if currentVC != destinationVC {
+                    self.tabBarView.transform = CGAffineTransform.identity
+                }
+            }
+        })
+    }
+    
 }

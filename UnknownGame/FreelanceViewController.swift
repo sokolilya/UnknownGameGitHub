@@ -16,6 +16,7 @@ class FreelanceViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupUI()
     }
         
     override func viewDidAppear(_ animated: Bool) {
@@ -34,6 +35,7 @@ class FreelanceViewController: UIViewController {
         }
     }
     
+    @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet weak var backButtonOutlet: UIButton!
     @IBAction func backButtonAction(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
@@ -52,3 +54,20 @@ class FreelanceViewController: UIViewController {
     }
     
 }
+
+extension FreelanceViewController {
+    
+    func setupUI() {
+        let modelName = UIDevice.modelName
+        print(modelName)
+        
+        switch modelName {
+        case "iPhone X", "iPhone XS", "iPhone XS Max", "iPhone XR", "iPhone 11", "iPhone 11 Pro", "iPhone 11 Pro Max":
+            backgroundImage.image = UIImage(named: "background_3_11")
+        default:
+            backgroundImage.image = UIImage(named: "background_3_8")
+        }
+    }
+    
+}
+
